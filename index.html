@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Submission Forms</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    h3 {
+      text-align: center;
+      background-color: bisque;
+      padding: 10px;
+    }
+    label {
+      display: inline-block;
+      width: 100%;
+      max-width: 180px;
+      margin-bottom: 10px;
+    }
+    input {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 10px;
+    }
+    div {
+      background-color: azure;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+    .photo {
+      padding: 15px;
+      border: 2px solid red;
+      border-radius: 5px;
+    }
+    .download {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .download button {
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .name, .mail, .dob, .number, .gender, .secound, .photo {
+      padding: 10px;
+      border: 1px solid #0c0000;
+      border-radius: 5px;
+    }
+    .gender {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Welcome To The Submission Forms</h3>
+
+  <div class="name">
+    <label for="firstname">Enter Your First Name</label>
+    <input type="text" id="firstname" name="firstname" />
+  </div>
+  <div class="secound">
+    <label for="secondname">Enter Your Second Name</label>
+    <input type="text" id="secondname" name="secondname" />
+  </div>
+  <div class="mail">
+    <label for="gmail">Enter Your Gmail Id</label>
+    <input type="text" id="gmail" name="gmail" />
+  </div>
+  <div class="dob">
+    <label for="dob">Select The Date Of Birth</label>
+    <input type="date" id="dob" name="dob" />
+  </div>
+  <div class="number">
+    <label for="phonenumber">Enter Your Phone Number</label>
+    <input type="text" name="phonenumber" id="phonenumber" />
+  </div>
+  <div class="gender">
+    <label for="gender">Select The Gender</label>
+    <input type="radio" name="gender" id="male" value="Male" /><label for="male">Male</label>
+    <input type="radio" name="gender" id="female" value="Female" /><label for="female">Female</label>
+    <input type="radio" name="gender" id="other" value="Other" /><label for="other">Other</label>
+  </div>
+  <div class="photo">
+    <label for="file">Upload Your Photo</label>
+    <input type="file" name="file" id="file" />
+  </div>
+
+  <div class="download">
+    <button onclick="downloadForm()">Download the completed form</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
